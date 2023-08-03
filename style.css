@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* cores 
+#441151 violeta
+#883677 roxo meio rosa
+#FF74D4 rosa*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    background-image: linear-gradient(to bottom, #883677, #FF74D4);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#conteudo {
+    color: white;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.36);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    transition: width 0.7s, height 0.7s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+
+}
+
+section#conteudo > div#img {
+    display: block;
+    background: #883677 url(imagens/images/image-header-mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center, center;
+    height: 200px;
+
+}
+
+section#conteudo > div#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+div#formulario > p{
+    font-size: 1em;
+}
+#dados {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.caixa {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #0101011b;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+
+
